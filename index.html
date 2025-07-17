@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kolaborasi Manusia dan AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .slide {
+            display: none;
+            min-height: 100vh;
+        }
+        .slide.active {
+            display: block;
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.05);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-white font-sans">
+    <!-- Navigation -->
+    <div class="fixed top-4 right-4 z-50 bg-white rounded-lg shadow-lg p-2">
+        <div class="flex items-center space-x-2">
+            <button onclick="prevSlide()" class="px-3 py-1 bg-gray-100 hover:bg-gray-200 rounded text-sm">← Prev</button>
+            <span id="slideCounter" class="text-sm font-medium">1 / 12</span>
+            <button onclick="nextSlide()" class="px-3 py-1 bg-blue-500 hover:bg-blue-600 text-white rounded text-sm">Next →</button>
+        </div>
+    </div>
+
+    <!-- Slide 1: Title -->
+    <div class="slide active">
+        <div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 to-purple-50">
+            <div class="text-center max-w-4xl mx-auto px-6">
+                <div class="mb-8">
+                    <h1 class="text-5xl font-bold gradient-text mb-4">Kolaborasi Manusia dan AI</h1>
+                    <h2 class="text-3xl font-semibold text-gray-700 mb-6">dalam Tugas Kreatif dan Produktif</h2>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <div class="flex items-center justify-center space-x-8 text-6xl mb-6">
+                        <span>👨‍💻</span>
+                        <span class="text-2xl text-gray-400">+</span>
+                        <span>🤖</span>
+                        <span class="text-2xl text-gray-400">=</span>
+                        <span>🚀</span>
+                    </div>
+                    <div class="text-gray-600">
+                        <p class="text-lg mb-2"><strong>Mata Pelajaran:</strong> Koding dan Kecerdasan Artifisial</p>
+                        <p class="text-lg"><strong>Guru:</strong> Alfaruq Asri, S.Pd</p>
+                    </div>
+                </div>
+                <p class="text-xl text-gray-600">Mari jelajahi bagaimana AI dapat menjadi partner terbaik dalam kreativitas dan produktivitas!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Learning Objectives -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">🎯 Tujuan Pembelajaran</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-blue-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">🧠</span>
+                            <h3 class="text-xl font-semibold">Memahami AI</h3>
+                        </div>
+                        <p class="text-gray-700">Menjelaskan apa itu kecerdasan artifisial dan cara kerjanya</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">🌍</span>
+                            <h3 class="text-xl font-semibold">AI di Kehidupan</h3>
+                        </div>
+                        <p class="text-gray-700">Mengidentifikasi penggunaan AI dalam aktivitas sehari-hari</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">🛠️</span>
+                            <h3 class="text-xl font-semibold">Tools AI Populer</h3>
+                        </div>
+                        <p class="text-gray-700">Mengenal berbagai tools AI untuk kolaborasi dan produktivitas</p>
+                    </div>
+                    <div class="bg-orange-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">🤝</span>
+                            <h3 class="text-xl font-semibold">Kolaborasi Praktis</h3>
+                        </div>
+                        <p class="text-gray-700">Mempraktikkan kolaborasi manusia-AI dalam tugas nyata</p>
+                    </div>
+                    <div class="bg-red-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">⚖️</span>
+                            <h3 class="text-xl font-semibold">Etika & Batasan</h3>
+                        </div>
+                        <p class="text-gray-700">Memahami aspek etis dan keterbatasan penggunaan AI</p>
+                    </div>
+                    <div class="bg-yellow-50 rounded-xl p-6 hover-scale">
+                        <div class="flex items-center mb-4">
+                            <span class="text-3xl mr-4">🔍</span>
+                            <h3 class="text-xl font-semibold">Eksplorasi Lanjut</h3>
+                        </div>
+                        <p class="text-gray-700">Mengembangkan kemampuan eksplorasi AI secara mandiri</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: What is AI? -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8 gradient-text">🤖 Apa Itu Kecerdasan Artifisial (AI)?</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">Definisi Sederhana</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-2xl">💡</span>
+                                <p class="text-gray-700"><strong>AI adalah teknologi</strong> yang memungkinkan komputer untuk "berpikir" dan membuat keputusan seperti manusia</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-2xl">🧩</span>
+                                <p class="text-gray-700"><strong>Machine Learning:</strong> AI belajar dari data dan pengalaman untuk meningkatkan performanya</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-2xl">🎯</span>
+                                <p class="text-gray-700"><strong>Tujuan:</strong> Membantu manusia menyelesaikan tugas dengan lebih efisien dan akurat</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-green-600">Cara Kerja AI</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-blue-100 rounded-full p-3">
+                                    <span class="text-xl">📊</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">1. Input Data</h4>
+                                    <p class="text-sm text-gray-600">AI menerima informasi</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-green-100 rounded-full p-3">
+                                    <span class="text-xl">⚙️</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">2. Proses</h4>
+                                    <p class="text-sm text-gray-600">Menganalisis pola dan hubungan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-purple-100 rounded-full p-3">
+                                    <span class="text-xl">🎯</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold">3. Output</h4>
+                                    <p class="text-sm text-gray-600">Memberikan hasil atau prediksi</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">🎥 Video: Penjelasan AI</h3>
+                    <div class="flex justify-center">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/X6Tj2PT41v8" 
+                                title="Apa itu AI" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen class="rounded-lg shadow-lg"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: AI Around Us -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">🌍 AI di Sekitar Kita</h2>
+                
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">📱</span>
+                            <h3 class="text-xl font-semibold mt-2">Smartphone</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Siri, Google Assistant</li>
+                            <li>• Face ID & Fingerprint</li>
+                            <li>• Kamera AI (Portrait Mode)</li>
+                            <li>• Prediksi teks saat mengetik</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">🎵</span>
+                            <h3 class="text-xl font-semibold mt-2">Musik & Video</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Spotify recommendations</li>
+                            <li>• YouTube suggestions</li>
+                            <li>• Netflix film recommendations</li>
+                            <li>• TikTok For You Page</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">🛒</span>
+                            <h3 class="text-xl font-semibold mt-2">E-Commerce</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Shopee product suggestions</li>
+                            <li>• Tokopedia search results</li>
+                            <li>• Lazada price predictions</li>
+                            <li>• Chatbot customer service</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">🚗</span>
+                            <h3 class="text-xl font-semibold mt-2">Transportasi</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Google Maps navigation</li>
+                            <li>• Gojek/Grab route optimization</li>
+                            <li>• Traffic prediction</li>
+                            <li>• Autonomous vehicles</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">🎮</span>
+                            <h3 class="text-xl font-semibold mt-2">Gaming</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• NPC behavior in games</li>
+                            <li>• Matchmaking systems</li>
+                            <li>• Anti-cheat detection</li>
+                            <li>• Procedural content generation</li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-white rounded-xl shadow-lg p-6 hover-scale">
+                        <div class="text-center mb-4">
+                            <span class="text-4xl">🏥</span>
+                            <h3 class="text-xl font-semibold mt-2">Kesehatan</h3>
+                        </div>
+                        <ul class="text-sm text-gray-700 space-y-2">
+                            <li>• Medical image analysis</li>
+                            <li>• Drug discovery</li>
+                            <li>• Fitness tracking apps</li>
+                            <li>• Symptom checkers</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 rounded-xl p-6 text-center">
+                    <h3 class="text-xl font-semibold mb-3">💭 Tahukah Kamu?</h3>
+                    <p class="text-gray-700">Rata-rata kita berinteraksi dengan AI lebih dari <strong>50 kali sehari</strong> tanpa menyadarinya!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Popular AI Tools -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-8 gradient-text">🛠️ Tools AI Populer dan Fungsinya</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-8">
+                    <div class="overflow-x-auto">
+                        <table class="w-full">
+                            <thead class="bg-gray-50">
+                                <tr>
+                                    <th class="px-6 py-4 text-left font-semibold">Tool AI</th>
+                                    <th class="px-6 py-4 text-left font-semibold">Kategori</th>
+                                    <th class="px-6 py-4 text-left font-semibold">Fungsi Utama</th>
+                                    <th class="px-6 py-4 text-left font-semibold">Contoh Penggunaan</th>
+                                </tr>
+                            </thead>
+                            <tbody class="divide-y divide-gray-200">
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">💬</span>
+                                            <strong>ChatGPT</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-blue-600">Text Generation</td>
+                                    <td class="px-6 py-4">Menulis, menjawab pertanyaan, coding</td>
+                                    <td class="px-6 py-4">Membuat essay, debugging code</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">🎨</span>
+                                            <strong>Canva AI</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-green-600">Design</td>
+                                    <td class="px-6 py-4">Desain grafis otomatis</td>
+                                    <td class="px-6 py-4">Poster, presentasi, logo</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">🔍</span>
+                                            <strong>Perplexity</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-purple-600">Search & Research</td>
+                                    <td class="px-6 py-4">Pencarian dengan AI, riset mendalam</td>
+                                    <td class="px-6 py-4">Riset akademik, fact-checking</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">✍️</span>
+                                            <strong>Grammarly</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-red-600">Writing Assistant</td>
+                                    <td class="px-6 py-4">Koreksi grammar dan style</td>
+                                    <td class="px-6 py-4">Email profesional, essay</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">🖼️</span>
+                                            <strong>DALL-E</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-orange-600">Image Generation</td>
+                                    <td class="px-6 py-4">Membuat gambar dari teks</td>
+                                    <td class="px-6 py-4">Ilustrasi, concept art</td>
+                                </tr>
+                                <tr class="hover:bg-gray-50">
+                                    <td class="px-6 py-4">
+                                        <div class="flex items-center">
+                                            <span class="text-2xl mr-3">💻</span>
+                                            <strong>GitHub Copilot</strong>
+                                        </div>
+                                    </td>
+                                    <td class="px-6 py-4 text-indigo-600">Coding Assistant</td>
+                                    <td class="px-6 py-4">Membantu menulis kode</td>
+                                    <td class="px-6 py-4">Auto-complete code, debugging</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8">
+                    <h3 class="text-2xl font-semibold mb-4 text-center">🎥 Video: 3 Tools AI Wajib Dicoba</h3>
+                    <div class="flex justify-center">
+                        <iframe width="315" height="560" src="https://www.youtube.com/embed/xU6m9UKZ77A" 
+                                title="3 Tools AI" frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen class="rounded-lg shadow-lg"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 6: Human-AI Collaboration Case Study -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">📚 Studi Kasus: Kolaborasi Human-AI</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-blue-600">🎯 Kasus: Membuat Poster Etika Digital</h3>
+                    
+                    <div class="grid lg:grid-cols-2 gap-8">
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4 text-green-600">👨‍💻 Peran Manusia</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">💡</span>
+                                    <div>
+                                        <h5 class="font-semibold">Ide & Konsep</h5>
+                                        <p class="text-sm text-gray-600">Menentukan tema "Etika Digital untuk Remaja"</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">🎯</span>
+                                    <div>
+                                        <h5 class="font-semibold">Target Audience</h5>
+                                        <p class="text-sm text-gray-600">Siswa SMA usia 15-18 tahun</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">📝</span>
+                                    <div>
+                                        <h5 class="font-semibold">Konten Utama</h5>
+                                        <p class="text-sm text-gray-600">5 poin etika: Privacy, Cyberbullying, Hoax, Copyright, Digital Footprint</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">✅</span>
+                                    <div>
+                                        <h5 class="font-semibold">Quality Control</h5>
+                                        <p class="text-sm text-gray-600">Review dan penyesuaian final</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="text-xl font-semibold mb-4 text-purple-600">🤖 Peran AI</h4>
+                            <div class="space-y-4">
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">🎨</span>
+                                    <div>
+                                        <h5 class="font-semibold">Desain Visual</h5>
+                                        <p class="text-sm text-gray-600">Canva AI membuat layout dan komposisi</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">🖼️</span>
+                                    <div>
+                                        <h5 class="font-semibold">Ilustrasi</h5>
+                                        <p class="text-sm text-gray-600">DALL-E generate ikon dan ilustrasi</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">✍️</span>
+                                    <div>
+                                        <h5 class="font-semibold">Copywriting</h5>
+                                        <p class="text-sm text-gray-600">ChatGPT membantu menyusun kalimat yang menarik</p>
+                                    </div>
+                                </div>
+                                <div class="flex items-start space-x-3">
+                                    <span class="text-xl">🎨</span>
+                                    <div>
+                                        <h5 class="font-semibold">Color Palette</h5>
+                                        <p class="text-sm text-gray-600">AI menyarankan kombinasi warna yang harmonis</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 rounded-xl p-6 text-center">
+                        <span class="text-3xl mb-3 block">⏱️</span>
+                        <h4 class="font-semibold mb-2">Waktu Pengerjaan</h4>
+                        <p class="text-sm text-gray-700">Tanpa AI: 4-6 jam<br>Dengan AI: 1-2 jam</p>
+                    </div>
+                    <div class="bg-green-50 rounded-xl p-6 text-center">
+                        <span class="text-3xl mb-3 block">💰</span>
+                        <h4 class="font-semibold mb-2">Efisiensi Biaya</h4>
+                        <p class="text-sm text-gray-700">Tidak perlu hire designer<br>Tools AI gratis/murah</p>
+                    </div>
+                    <div class="bg-purple-50 rounded-xl p-6 text-center">
+                        <span class="text-3xl mb-3 block">🎯</span>
+                        <h4 class="font-semibold mb-2">Kualitas Hasil</h4>
+                        <p class="text-sm text-gray-700">Profesional & menarik<br>Sesuai target audience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 7: AI in Coding -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">💻 AI dalam Dunia Koding</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">🚀 Keunggulan AI untuk Programmer</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚡</span>
+                                <div>
+                                    <h4 class="font-semibold">Auto-completion</h4>
+                                    <p class="text-sm text-gray-600">AI memprediksi kode yang akan ditulis</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🐛</span>
+                                <div>
+                                    <h4 class="font-semibold">Bug Detection</h4>
+                                    <p class="text-sm text-gray-600">Mendeteksi error sebelum program dijalankan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">📚</span>
+                                <div>
+                                    <h4 class="font-semibold">Code Documentation</h4>
+                                    <p class="text-sm text-gray-600">Otomatis membuat dokumentasi kode</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🔄</span>
+                                <div>
+                                    <h4 class="font-semibold">Code Refactoring</h4>
+                                    <p class="text-sm text-gray-600">Memperbaiki struktur kode agar lebih efisien</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-green-600">🛠️ Tools AI untuk Coding</h3>
+                        <div class="space-y-4">
+                            <div class="border rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="text-xl mr-3">🐙</span>
+                                    <h4 class="font-semibold">GitHub Copilot</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">AI pair programmer yang membantu menulis kode</p>
+                            </div>
+                            <div class="border rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="text-xl mr-3">🧠</span>
+                                    <h4 class="font-semibold">Tabnine</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">AI code completion untuk berbagai bahasa</p>
+                            </div>
+                            <div class="border rounded-lg p-4">
+                                <div class="flex items-center mb-2">
+                                    <span class="text-xl mr-3">🔍</span>
+                                    <h4 class="font-semibold">DeepCode</h4>
+                                </div>
+                                <p class="text-sm text-gray-600">AI code review untuk mendeteksi bugs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-gray-50 to-blue-50 rounded-xl p-8">
+                    <h3 class="text-xl font-semibold mb-4 text-center">💡 Contoh Kolaborasi: Membuat Website Sederhana</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="bg-white rounded-lg p-4 mb-3">
+                                <span class="text-2xl">👨‍💻</span>
+                                <h4 class="font-semibold mt-2">Manusia</h4>
+                            </div>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Menentukan konsep website</li>
+                                <li>• Membuat wireframe</li>
+                                <li>• Review dan testing</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-white rounded-lg p-4 mb-3">
+                                <span class="text-2xl">🤖</span>
+                                <h4 class="font-semibold mt-2">AI</h4>
+                            </div>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Generate HTML/CSS code</li>
+                                <li>• Suggest best practices</li>
+                                <li>• Auto-complete functions</li>
+                            </ul>
+                        </div>
+                        <div class="text-center">
+                            <div class="bg-white rounded-lg p-4 mb-3">
+                                <span class="text-2xl">🚀</span>
+                                <h4 class="font-semibold mt-2">Hasil</h4>
+                            </div>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Website responsive</li>
+                                <li>• Code yang clean</li>
+                                <li>• Waktu 70% lebih cepat</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 8: Ethics and Limitations -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">⚖️ Etika dan Batasan AI</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-red-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-red-600">⚠️ Risiko dan Tantangan</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🎭</span>
+                                <div>
+                                    <h4 class="font-semibold">Bias dan Diskriminasi</h4>
+                                    <p class="text-sm text-gray-700">AI dapat mewarisi bias dari data training</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🔒</span>
+                                <div>
+                                    <h4 class="font-semibold">Privacy Concerns</h4>
+                                    <p class="text-sm text-gray-700">Data pribadi dapat disalahgunakan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">💼</span>
+                                <div>
+                                    <h4 class="font-semibold">Job Displacement</h4>
+                                    <p class="text-sm text-gray-700">Beberapa pekerjaan terancam tergantikan</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🤖</span>
+                                <div>
+                                    <h4 class="font-semibold">Over-dependence</h4>
+                                    <p class="text-sm text-gray-700">Ketergantungan berlebihan pada AI</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-green-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-green-600">✅ Prinsip Penggunaan Etis</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🎯</span>
+                                <div>
+                                    <h4 class="font-semibold">Transparency</h4>
+                                    <p class="text-sm text-gray-700">Jujur tentang penggunaan AI dalam karya</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚖️</span>
+                                <div>
+                                    <h4 class="font-semibold">Fairness</h4>
+                                    <p class="text-sm text-gray-700">Memastikan AI tidak diskriminatif</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🛡️</span>
+                                <div>
+                                    <h4 class="font-semibold">Accountability</h4>
+                                    <p class="text-sm text-gray-700">Bertanggung jawab atas output AI</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🧠</span>
+                                <div>
+                                    <h4 class="font-semibold">Human Oversight</h4>
+                                    <p class="text-sm text-gray-700">Selalu ada kontrol dan review manusia</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-blue-600">🎯 Batasan AI yang Perlu Dipahami</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center p-4 border rounded-lg">
+                            <span class="text-3xl mb-3 block">🧠</span>
+                            <h4 class="font-semibold mb-2">Tidak Memiliki Kesadaran</h4>
+                            <p class="text-sm text-gray-700">AI tidak benar-benar "memahami" seperti manusia</p>
+                        </div>
+                        <div class="text-center p-4 border rounded-lg">
+                            <span class="text-3xl mb-3 block">📊</span>
+                            <h4 class="font-semibold mb-2">Terbatas pada Data</h4>
+                            <p class="text-sm text-gray-700">Kualitas output bergantung pada data training</p>
+                        </div>
+                        <div class="text-center p-4 border rounded-lg">
+                            <span class="text-3xl mb-3 block">🎨</span>
+                            <h4 class="font-semibold mb-2">Kurang Kreativitas Asli</h4>
+                            <p class="text-sm text-gray-700">AI mengkombinasi pola yang sudah ada</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 9: Discussion Questions -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">💭 Diskusi: Bisakah AI Jadi Rekan Kerja?</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-green-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-green-600">👍 Argumen PRO</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚡</span>
+                                <p class="text-gray-700">AI dapat bekerja 24/7 tanpa lelah</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🎯</span>
+                                <p class="text-gray-700">Konsisten dan tidak terpengaruh emosi</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">📊</span>
+                                <p class="text-gray-700">Dapat memproses data dalam jumlah besar</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">💰</span>
+                                <p class="text-gray-700">Lebih efisien dari segi biaya</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-red-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-red-600">👎 Argumen KONTRA</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🤝</span>
+                                <p class="text-gray-700">Kurang empati dan emotional intelligence</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">💡</span>
+                                <p class="text-gray-700">Tidak dapat berpikir out-of-the-box</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🎭</span>
+                                <p class="text-gray-700">Dapat memiliki bias tersembunyi</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚠️</span>
+                                <p class="text-gray-700">Risiko error yang tidak terprediksi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-purple-600">🤔 Pertanyaan untuk Diskusi</h3>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="p-4 bg-blue-50 rounded-lg">
+                                <p class="font-semibold text-blue-800">1. Apakah kamu merasa nyaman bekerja dengan AI sebagai partner?</p>
+                            </div>
+                            <div class="p-4 bg-green-50 rounded-lg">
+                                <p class="font-semibold text-green-800">2. Dalam situasi apa AI lebih baik dari manusia?</p>
+                            </div>
+                            <div class="p-4 bg-purple-50 rounded-lg">
+                                <p class="font-semibold text-purple-800">3. Bagaimana cara memastikan AI tidak menggantikan kreativitas manusia?</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="p-4 bg-orange-50 rounded-lg">
+                                <p class="font-semibold text-orange-800">4. Apa yang harus dilakukan jika AI membuat kesalahan?</p>
+                            </div>
+                            <div class="p-4 bg-red-50 rounded-lg">
+                                <p class="font-semibold text-red-800">5. Bagaimana menjaga keseimbangan antara efisiensi AI dan nilai kemanusiaan?</p>
+                            </div>
+                            <div class="p-4 bg-yellow-50 rounded-lg">
+                                <p class="font-semibold text-yellow-800">6. Profesi apa yang tidak bisa digantikan AI?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 10: Task - Choose AI Tools -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">🎯 Tugas: Pilih AI Tools yang Tepat</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-blue-600">📋 Skenario Tugas</h3>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div class="space-y-6">
+                            <div class="p-6 border-2 border-blue-200 rounded-xl">
+                                <h4 class="text-xl font-semibold mb-3 text-blue-600">📚 Skenario 1: Tugas Sekolah</h4>
+                                <p class="text-gray-700 mb-4">Kamu diminta membuat presentasi tentang "Dampak Media Sosial pada Remaja" untuk mata pelajaran Sosiologi.</p>
+                                <div class="bg-blue-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-blue-800">Pertanyaan:</p>
+                                    <p class="text-blue-700">AI tools mana yang akan kamu gunakan dan mengapa?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="p-6 border-2 border-green-200 rounded-xl">
+                                <h4 class="text-xl font-semibold mb-3 text-green-600">🎨 Skenario 2: Proyek Kreatif</h4>
+                                <p class="text-gray-700 mb-4">Kamu ingin membuat konten Instagram untuk mempromosikan event sekolah dengan tema "Go Green".</p>
+                                <div class="bg-green-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-green-800">Pertanyaan:</p>
+                                    <p class="text-green-700">Bagaimana kombinasi AI tools untuk hasil maksimal?</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-6">
+                            <div class="p-6 border-2 border-purple-200 rounded-xl">
+                                <h4 class="text-xl font-semibold mb-3 text-purple-600">💻 Skenario 3: Coding Project</h4>
+                                <p class="text-gray-700 mb-4">Kamu ingin membuat website portfolio sederhana untuk menampilkan karya-karya digitalmu.</p>
+                                <div class="bg-purple-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-purple-800">Pertanyaan:</p>
+                                    <p class="text-purple-700">AI tools mana yang paling membantu untuk pemula?</p>
+                                </div>
+                            </div>
+                            
+                            <div class="p-6 border-2 border-orange-200 rounded-xl">
+                                <h4 class="text-xl font-semibold mb-3 text-orange-600">📝 Skenario 4: Riset Akademik</h4>
+                                <p class="text-gray-700 mb-4">Kamu perlu menulis essay tentang "Renewable Energy" dengan referensi yang kredibel dan akurat.</p>
+                                <div class="bg-orange-50 p-4 rounded-lg">
+                                    <p class="font-semibold text-orange-800">Pertanyaan:</p>
+                                    <p class="text-orange-700">Bagaimana memastikan informasi dari AI akurat?</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8">
+                    <h3 class="text-xl font-semibold mb-4 text-center">💡 Tips Memilih AI Tools</h3>
+                    <div class="grid md:grid-cols-4 gap-4">
+                        <div class="text-center">
+                            <span class="text-2xl mb-2 block">🎯</span>
+                            <h4 class="font-semibold mb-1">Tujuan Jelas</h4>
+                            <p class="text-sm text-gray-600">Tentukan hasil yang diinginkan</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-2xl mb-2 block">⏱️</span>
+                            <h4 class="font-semibold mb-1">Waktu Tersedia</h4>
+                            <p class="text-sm text-gray-600">Sesuaikan dengan deadline</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-2xl mb-2 block">💰</span>
+                            <h4 class="font-semibold mb-1">Budget</h4>
+                            <p class="text-sm text-gray-600">Pilih free atau paid tools</p>
+                        </div>
+                        <div class="text-center">
+                            <span class="text-2xl mb-2 block">🎨</span>
+                            <h4 class="font-semibold mb-1">Skill Level</h4>
+                            <p class="text-sm text-gray-600">Sesuaikan dengan kemampuan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 11: Hands-on Activity -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">🚀 Aksi Kolaborasi: Coba AI Tools</h2>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8">
+                    <h3 class="text-2xl font-semibold mb-6 text-center text-green-600">🎯 Aktivitas Praktik</h3>
+                    <div class="grid lg:grid-cols-3 gap-6">
+                        <div class="bg-blue-50 rounded-xl p-6">
+                            <h4 class="text-xl font-semibold mb-4 text-blue-600">📝 Opsi 1: Content Creation</h4>
+                            <div class="space-y-3">
+                                <p class="font-semibold">Tools: ChatGPT + Canva</p>
+                                <div class="text-sm text-gray-700 space-y-2">
+                                    <p>1. Gunakan ChatGPT untuk brainstorm ide konten</p>
+                                    <p>2. Minta ChatGPT buatkan caption menarik</p>
+                                    <p>3. Buat visual di Canva dengan AI Magic Design</p>
+                                    <p>4. Kombinasikan hasil keduanya</p>
+                                </div>
+                                <div class="bg-blue-100 p-3 rounded-lg">
+                                    <p class="text-sm font-semibold text-blue-800">Target: Post Instagram tentang tips belajar efektif</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-green-50 rounded-xl p-6">
+                            <h4 class="text-xl font-semibold mb-4 text-green-600">🔍 Opsi 2: Research Assistant</h4>
+                            <div class="space-y-3">
+                                <p class="font-semibold">Tools: Perplexity + Grammarly</p>
+                                <div class="text-sm text-gray-700 space-y-2">
+                                    <p>1. Riset topik dengan Perplexity</p>
+                                    <p>2. Kumpulkan fakta dan data terpercaya</p>
+                                    <p>3. Tulis ringkasan dengan bantuan AI</p>
+                                    <p>4. Polish dengan Grammarly</p>
+                                </div>
+                                <div class="bg-green-100 p-3 rounded-lg">
+                                    <p class="text-sm font-semibold text-green-800">Target: Artikel mini tentang teknologi terbaru</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="bg-purple-50 rounded-xl p-6">
+                            <h4 class="text-xl font-semibold mb-4 text-purple-600">💻 Opsi 3: Simple Coding</h4>
+                            <div class="space-y-3">
+                                <p class="font-semibold">Tools: ChatGPT + Browser</p>
+                                <div class="text-sm text-gray-700 space-y-2">
+                                    <p>1. Minta ChatGPT buat HTML sederhana</p>
+                                    <p>2. Tambahkan styling CSS</p>
+                                    <p>3. Test di browser</p>
+                                    <p>4. Iterasi dan perbaiki</p>
+                                </div>
+                                <div class="bg-purple-100 p-3 rounded-lg">
+                                    <p class="text-sm font-semibold text-purple-800">Target: Landing page personal sederhana</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-yellow-50 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-yellow-600">⏱️ Timeline Aktivitas</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-yellow-200 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">1</span>
+                                <p class="text-gray-700">Pilih salah satu opsi (5 menit)</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-yellow-200 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">2</span>
+                                <p class="text-gray-700">Eksekusi dengan AI tools (15 menit)</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-yellow-200 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">3</span>
+                                <p class="text-gray-700">Review dan perbaikan (5 menit)</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="bg-yellow-200 rounded-full w-8 h-8 flex items-center justify-center text-sm font-bold">4</span>
+                                <p class="text-gray-700">Presentasi hasil (10 menit)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-orange-50 rounded-xl p-6">
+                        <h3 class="text-xl font-semibold mb-4 text-orange-600">📊 Kriteria Evaluasi</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center space-x-3">
+                                <span class="text-xl">🎯</span>
+                                <p class="text-gray-700"><strong>Kesesuaian:</strong> Apakah hasil sesuai tujuan?</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-xl">🤝</span>
+                                <p class="text-gray-700"><strong>Kolaborasi:</strong> Bagaimana manusia dan AI bekerja sama?</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-xl">⚡</span>
+                                <p class="text-gray-700"><strong>Efisiensi:</strong> Apakah AI mempercepat proses?</p>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <span class="text-xl">🎨</span>
+                                <p class="text-gray-700"><strong>Kreativitas:</strong> Seberapa kreatif hasilnya?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 12: Conclusion -->
+    <div class="slide">
+        <div class="min-h-screen flex items-center justify-center p-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 gradient-text">🎉 AI sebagai Partner Kolaboratif</h2>
+                
+                <div class="grid lg:grid-cols-2 gap-8 mb-8">
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-blue-600">🔑 Key Takeaways</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🤝</span>
+                                <p class="text-gray-700">AI adalah <strong>partner</strong>, bukan pengganti manusia</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚡</span>
+                                <p class="text-gray-700">Kolaborasi manusia-AI meningkatkan <strong>produktivitas</strong></p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🎯</span>
+                                <p class="text-gray-700">Pilih tools AI sesuai <strong>kebutuhan spesifik</strong></p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">⚖️</span>
+                                <p class="text-gray-700">Selalu pertimbangkan <strong>aspek etis</strong> dalam penggunaan</p>
+                            </div>
+                            <div class="flex items-start space-x-3">
+                                <span class="text-xl">🧠</span>
+                                <p class="text-gray-700">Kreativitas dan empati manusia tetap <strong>tak tergantikan</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8">
+                        <h3 class="text-2xl font-semibold mb-6 text-purple-600">🚀 Tantangan Eksplorasi</h3>
+                        <div class="space-y-4">
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold mb-2">📱 Week 1: Social Media</h4>
+                                <p class="text-sm text-gray-700">Coba 3 AI tools berbeda untuk membuat konten media sosial</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold mb-2">📚 Week 2: Academic</h4>
+                                <p class="text-sm text-gray-700">Gunakan AI untuk membantu tugas sekolah (dengan transparansi)</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold mb-2">🎨 Week 3: Creative</h4>
+                                <p class="text-sm text-gray-700">Eksplorasi AI untuk proyek kreatif personal</p>
+                            </div>
+                            <div class="bg-white rounded-lg p-4">
+                                <h4 class="font-semibold mb-2">📝 Week 4: Documentation</h4>
+                                <p class="text-sm text-gray-700">Dokumentasikan pengalaman dan refleksi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <h3 class="text-2xl font-semibold mb-4 text-green-600">🌟 Pesan Penutup</h3>
+                    <div class="max-w-4xl mx-auto">
+                        <p class="text-lg text-gray-700 mb-6">
+                            "Masa depan bukan tentang manusia vs AI, tetapi tentang manusia <strong>dengan</strong> AI. 
+                            Kalian adalah generasi yang akan memimpin era kolaborasi ini!"
+                        </p>
+                        <div class="flex justify-center items-center space-x-4 text-4xl mb-6">
+                            <span>👨‍🎓</span>
+                            <span class="text-2xl text-gray-400">+</span>
+                            <span>🤖</span>
+                            <span class="text-2xl text-gray-400">=</span>
+                            <span>🌟</span>
+                        </div>
+                        <p class="text-xl font-semibold gradient-text">
+                            Mari berkolaborasi dengan AI untuk menciptakan masa depan yang lebih baik!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
+            slides[currentSlide].classList.add('fade-in');
+            
+            // Update counter
+            document.getElementById('slideCounter').textContent = `${currentSlide + 1} / ${totalSlides}`;
+            
+            // Remove fade-in class after animation
+            setTimeout(() => {
+                slides[currentSlide].classList.remove('fade-in');
+            }, 500);
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+
+        // Keyboard navigation
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'ArrowRight' || e.key === ' ') {
+                nextSlide();
+            } else if (e.key === 'ArrowLeft') {
+                prevSlide();
+            }
+        });
+
+        // Initialize
+        showSlide(0);
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96077502870b6061',t:'MTc1MjczMTM3Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
